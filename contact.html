@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechStore</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li>
+                    <a href="#" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Contact Section -->
+    <main class="contact-page-main">
+
+        <h2 class="page-title">Get in Touch</h2>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <p>Have questions, feedback, or need support? We're here to help!</p>
+
+            <div class="contact-details">
+
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <!-- ✅ Make Location Clickable -->
+                    <p>
+                        <a href="https://maps.google.com/?q=123 Tech Lane, Gadget City, TX 78701" target="_blank">
+                            123 Tech Lane, Gadget City, TX 78701
+                        </a>
+                    </p>
+                </div>
+
+                <div class="detail-item">
+                    <i class="fas fa-phone"></i>
+                    <!-- ✅ Make Phone Clickable -->
+                    <p>
+                        <a href="tel:9389953806">+91 9389953806</a><br>
+                        <a href="tel:9310275671">+91 9310275671</a><br>
+                        <a href="tel:6269016436">+91 6269016436</a>
+                    </p>
+                </div>
+
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <!-- ✅ Make Email Clickable -->
+                    <p>
+                        <a href="mailto:nirbhay4467@gmail.com">nirbhay4467@gmail.com</a>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h3 class="section-subheading">Send us a Message</h3>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn contact-submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <aside class="side-cart" id="side-cart">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart-message">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </aside>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- ✅ FORM SUBMIT SCRIPT (added directly in HTML if easier) -->
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                alert("Form submitted successfully! Thank you for your feedback.");
+                contactForm.reset();
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="mainNavbar">
+        <div class="container">
+            <div id="menu-btn">&#9776;</div>
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content-wrapper">
+            <div class="hero-text-content">
+                <p class="hero-sales-line">SALES TODAY ONLY</p>
+                <h1 class="hero-title">TECHNOLOGY</h1>
+                <p class="hero-description">
+                    Experience futuristic gadgets with unbeatable performance and style.
+                </p>
+                <a href="products.html" class="btn hero-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-heading">Featured Products</h2>
+        <div id="products-container"></div>
+
+        <div class="view-all-products">
+            <a href="products.html" class="btn">View All Products</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- Side Cart HTML Structure -->
+    <div class="side-cart" id="side-cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically loaded here by JS -->
+            <p class="empty-cart-message">Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
