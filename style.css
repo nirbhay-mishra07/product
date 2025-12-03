@@ -57,20 +57,14 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px; /* so logo doesn't touch menu button */
 }
 
 .navbar .logo {
-    font-family: 'Archivo', sans-serif;
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #C9D1D9;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    text-shadow: none;
-    transition: font-size 0.4s ease-in-out;
+    margin-left: 0 !important; /* FORCE it to stay on the left */
 }
+
 
 
 
@@ -817,6 +811,7 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
 
 
 
