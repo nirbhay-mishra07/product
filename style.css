@@ -70,9 +70,8 @@ body {
     letter-spacing: 0.5px;
     text-shadow: none;
     transition: font-size 0.4s ease-in-out;
-
-    margin-left: auto;   /* ⬅️ This moves logo to the right */
 }
+
 
 
 .navbar.scrolled .logo {
@@ -818,6 +817,7 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
 
 
 
