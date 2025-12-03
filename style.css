@@ -171,7 +171,7 @@ body {
 }
 
 .hero-text-content {
-    text-align: left;
+    text-align: right;
     max-width: 500px;
     box-sizing: border-box;
     padding: 20px;
@@ -812,3 +812,4 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
