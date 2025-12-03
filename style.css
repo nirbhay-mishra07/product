@@ -174,10 +174,10 @@ body {
 }
 .hero-text-content {
     position: absolute;
-    right: 5%;                /* Moves whole box to right */
+    left: 5%;                /* Moves whole box to left */
     top: 50%;                 /* Keeps vertical center */
     transform: translateY(-50%);
-    text-align: right;        /* Align text */
+    text-align: left;        /* Align text */
     max-width: 500px;
     padding: 20px;
 }
@@ -818,5 +818,6 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
 
 
