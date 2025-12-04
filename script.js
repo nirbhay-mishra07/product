@@ -16,42 +16,42 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Omen Gaming Laptop',
             image: 'omen.png',
             description: 'Experience unparalleled gaming performance with the Omen series.',
-            price: 189900
+            price: 1,89,900
         },
         {
             id: 2,
             name: 'ROG Zephyrus Duo',
             image: 'rog.png',
             description: 'Dual-screen ROG Zephyrus Duo designed for extreme multitasking and gaming.',
-            price: 329990
+            price: 3,29,990
         },
         {
             id: 3,
             name: 'MacBook Air M2',
             image: 'macbook.png',
             description: 'Ultra-light and powerful MacBook Air with the M2 chip.',
-            price: 114900
+            price: 1,14,900
         },
         {
             id: 4,
             name: 'Samsung S25 Ultra',
             image: 's25.png',
             description: 'Samsung’s flagship monster featuring a pro-grade camera and top-tier performance.',
-            price: 129999
+            price: 1,29,999
         },
         {
             id: 5,
             name: 'iPhone 17 Pro',
             image: '17pro.png',
             description: 'Apple’s next-gen flagship featuring ProMotion and advanced A19 Bionic chipset.',
-            price: 139999
+            price: 1,39,999
         },
         {
             id: 6,
             name: 'Samsung Galaxy Z Flip 7',
             image: 'flip.png',
             description: 'Next-gen compact foldable with improved hinge, camera and battery.',
-            price: 109999
+            price: 1,09,999
         },
     
         /* 🔊 Headphones Section */
@@ -60,21 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Sony WH-1000XM5',
             image: 'sony.png',
             description: 'Industry-leading ANC with premium sound and comfort.',
-            price: 29990
+            price: 29,990
         },
         {
             id: 8,
             name: 'Bose QuietComfort Ultra',
             image: 'bose.png',
             description: 'Ultimate comfort and crystal-clear ANC with premium sound.',
-            price: 34990
+            price: 34,990
         },
         {
             id: 9,
             name: 'JBL Tour One M2',
             image: 'jbl.png',
             description: 'Signature JBL sound with adaptive noise cancellation.',
-            price: 21999
+            price: 21,999
         }
     ];
     
@@ -279,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 
 
