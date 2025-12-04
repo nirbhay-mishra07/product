@@ -114,9 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemsContainer.innerHTML = ''; // Clear previous items
 
         if (cart.length === 0) {
-            cartItemsContainer.innerHTML = '<p class="empty-cart-message">Your cart is empty.</p>';
-            return;
-        }
+    cartItemsContainer.innerHTML = '<p class="empty-cart-message">Your cart is empty.</p>';
+    cartTotalElement.textContent = formatCurrency(0);  // RESET TOTAL
+    return;
+}
+
 
         cart.forEach(item => {
             const cartItemDiv = document.createElement('div');
@@ -277,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 
 
