@@ -57,9 +57,10 @@ body {
 
 .navbar .container {
     display: flex;
+    justify-content: space-between;  /* Spreads logo left, links right */
     align-items: center;
-    gap: 20px; /* so logo doesn't touch menu button */
 }
+
 
 .navbar .logo {
     margin-left: 0 !important; /* FORCE it to stay on the left */
@@ -811,6 +812,7 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
 
 
 
