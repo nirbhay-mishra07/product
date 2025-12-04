@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname.split('/').pop();
 
     if (currentPage === 'index.html' || currentPage === '') {
-        const previewProducts = allProducts.slice(0, 4);
+        const previewProducts = allProducts.slice(0, 3);
         renderPageProducts(previewProducts);
     } else if (currentPage === 'products.html') {
         renderPageProducts(allProducts);
@@ -276,5 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 
