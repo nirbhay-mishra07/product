@@ -36,7 +36,10 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: rgba(13, 17, 23, 0.95); /* Semi-transparent Primary Background for sticky effect */
+    background: rgba(13, 17, 23, 0.35);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+/* Semi-transparent Primary Background for sticky effect */
     padding: 20px 0;
     border-bottom: 1px solid rgba(35, 40, 46, 0.7); /* Darker, subtle border */
     box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Enhanced shadow */
@@ -819,3 +822,4 @@ footer {
 
 
      isme bass navbar edit krna nothing else just navbnar k style baki jkuch nai\
+
