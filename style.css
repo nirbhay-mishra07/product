@@ -313,6 +313,7 @@ main {
     background-color: #0D1117; /* Match body background */
     box-shadow: none;
 }
+
 /* Re-applying main's inner shadow and background to inner sections */
 .contact-info, .contact-form-section, .about-content, .about-preview-section {
     background-color: #161B22; /* Surface/Card background for internal blocks */
@@ -321,7 +322,6 @@ main {
     box-shadow: 0 5px 20px rgba(0,0,0,0.3); /* Soft dark shadow */
     margin-bottom: 50px;
 }
-
 
 .contact-info p, .about-content p {
     font-size: 1.1em;
@@ -336,6 +336,19 @@ main {
     gap: 30px;
     margin-top: 30px;
 }
+
+/* 🔥 Edited Part — Remove Blue Links (Theme Color Links) */
+.contact-info a {
+    color: #C9D1D9;              /* Normal light grey text */
+    text-decoration: none;       /* No underline */
+    transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #58A6FF;              /* Theme blue hover */
+    text-decoration: underline;  /* Optional underline */
+}
+
 
 .detail-item {
     display: flex;
@@ -822,4 +835,5 @@ footer {
 
 
      isme bass navbar edit krna nothing else just navbnar k style baki jkuch nai\
+
 
